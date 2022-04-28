@@ -1,0 +1,39 @@
+{
+  "name": "jotform-calendar-integration",
+  "version": "0.1.4",
+  "description": "A simple implementation that transforms webhook data from Jotform into data that can be sent to Google's Calendar API.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"pnpx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "prod": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hertyxyz/jotform-calendar-integration.git"
+  },
+  "keywords": [],
+  "author": "Owen Flaherty <fl@herty.xyz>",
+  "license": "Unlicensed",
+  "bugs": {
+    "url": "https://github.com/hertyxyz/jotform-calendar-integration/issues"
+  },
+  "homepage": "https://herty.xyz/projects/jci",
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.29",
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "express-handlebars": "^6.0.5",
+    "googleapis": "^100.0.0",
+    "helmet": "^5.0.2",
+    "tslog": "^3.3.3"
+  }
+}
